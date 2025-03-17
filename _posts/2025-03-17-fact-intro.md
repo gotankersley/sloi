@@ -2,8 +2,8 @@
 layout: post
 title:  "Introduction"
 date:   2025-03-14 11:39:55 -0600
-tags: fact composite-mtn
-#thumb: 
+tags: fact composite
+thumb: /img/tork5/board-rendered.jpg
 no-border: true
 caption: Composite Mtn
 project-link: /fact-intro/
