@@ -2,7 +2,7 @@
 layout: category
 title: Primes
 permalink: /primes/
-order: 0
+order: 2
 category: primes
 ---
 

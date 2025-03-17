@@ -1,12 +1,13 @@
 ---
-layout: page
-title: Compression (xn)
-permalink: /xn/
-order: 2
+layout: category
+title: Compression
+permalink: /xn
+order: 0
+category: xn
 ---
 
 # About
-Why are we doing this - isn't compressXN a solved problem?
+Why are we doing this - isn't compress(xn) a solved problem?
 
 The aim of this blog is to document some of the more esoteric compression schemes
 
