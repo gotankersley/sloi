@@ -6,7 +6,7 @@ layout: default
 
 <ul class="post-list">
 {% for post in site.posts %}	
-	{% assign cat = page.title | downcase %}
+	{% assign cat = page.content | downcase %}
 	{% if post.tags.first == cat %}
 	<li class="cat-post-item">
 		<h2>
