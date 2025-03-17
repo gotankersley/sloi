@@ -6,7 +6,7 @@ tags: xn ca
 #thumb: 
 no-border: true
 caption: Jezzball?!?
-project-link: /campression
+project-link: /xn/campression
 ---
 
 # CAmpression
