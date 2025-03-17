@@ -5,7 +5,7 @@ permalink: /fact/
 order: 2
 ---
 
-# About
+fact
 
 
 
