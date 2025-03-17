@@ -3,10 +3,12 @@ layout: default
 ---
 
 <h1 class="page-title">{{page.title}}</h1>
-
+<div class="page-content">
+{% page.content %}
+</div>
 <ul class="post-list">
 {% for post in site.posts %}	
-	{% assign cat = page.content | downcase %}
+	{% assign cat = page.category | downcase %}
 	{% if post.tags.first == cat %}
 	<li class="cat-post-item">
 		<h2>
