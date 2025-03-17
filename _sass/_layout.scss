@@ -9,18 +9,22 @@
     position: relative;
 }
 
-.site-header.graphics  {
+.site-header.xn  {
 	background-color: #49a7e9;
 }
 
-.site-header.games {
+.site-header.fact {
 	background-color: #63bd2f;
+}
+
+.site-header.fact {
+	background-color: teal;
 }
 
 .site-logo{
 	float: left;
 	margin-left:-150px;
-	background: url('/img/site/sloi-logo.jpg') no-repeat;
+	background: url('img/site/sloi-logo.jpg') no-repeat;
 	width: 150px;
 	height: 80px;
 }
