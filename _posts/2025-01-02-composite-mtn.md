@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "Introduction"
-date:   2025-03-14 11:39:55 -0600
+title:  "Composite Mtn"
+date:   2025-01-02 11:39:55 -0600
 tags: fact composite
-thumb: /img/tork5/board-rendered.jpg
+#thumb: 
 no-border: true
 caption: Composite Mtn
-project-link: /fact-intro
+project-link: /composite-mtn
 ---
 # Introduction
 # Terminology & Dramatis Personnae:
@@ -46,4 +46,3 @@ and not all the way to x/2.
 So, this isn't really groundbreaking, or anything new, but it just confirms what we already know about factors, but it does tie the geometrically to 
 certain location in Composite Mountain.
 
-<iframe src="/experiments/pan/sphere.html" width="300" height="300"></iframe>
