@@ -6,23 +6,16 @@ order: 0
 category: xn
 ---
 
-# About
+#About
 Isn't compression a solved problem?
 
-The aim of this blog is to document some of the more esoteric compression schemes
+Well, yes... and then again no.  
 
-- Original research and ideas on compression.  There are obviously several (better) and 
-other ones, see the Solomon book for a great overview.
-- How I got started thinking about this
-- Have a good idea?
+Certainly, yes, in the sense that there is no lack of high quality methods of achieving compression available if you're just looking 
+to squeeze the bits & bytes a 'lil.  However, although we often make use of them, without understanding why they work, if we take the time
+to peek under the 'hood, then our time investment is almost always richly repaid with the beautiful algorithms therein.
 
-Where does compression come from?
-- Context/Meta Knowledge (e.g. pids)
-- Repetition (patterns)
-- Search/Computational effort
-- Order
--> And this has an interesting corollary: 
-Any message can be separated into a orderless collection of values, and a permutation of those values,
-which can potentially, (but not always), be exploited for xn.
+Also, despite this abundance, there is still room for innovation, and improvement, the aim of this section is to document some of the more esoteric compression schemes and ideas.
+
 
 
