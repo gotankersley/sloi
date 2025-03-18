@@ -6,8 +6,8 @@ order: 0
 category: xn
 ---
 
-#About
-Isn't compression a solved problem?
+<h2>About</h2>
+<p>Isn't compression a solved problem?</p>
 
 Well, yes... and then again no.  
 
