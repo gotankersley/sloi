@@ -7,7 +7,7 @@ category: xn
 ---
 
 # About
-Why are we doing this - isn't compress(xn) a solved problem?
+Isn't compression a solved problem?
 
 The aim of this blog is to document some of the more esoteric compression schemes
 
