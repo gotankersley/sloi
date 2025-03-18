@@ -8,12 +8,14 @@ no-border: true
 caption: Introduction
 project-link: /fact-intro
 ---
-I have some vague memory of learning about factors in gradeschool, and not being particularly impressed.  
-I had no idea then the role it was to play in my life in the future. However, other than that fleeting encounter, 
-I wasn't to give factors a second thought for probably 20+ years.
-But, it must have been somewhere in the synapses, 'cause, playing around with some potential compression algorithms, 
-I found a place where it seemed like factorization would fit like a hand to a glove, (link to XN project), and I knew it was time to learn more about it.
+I have some vague memory of learning about factors in gradeschool ... and not being particularly impressed.  
+But, other than that fleeting encounter, I wasn't to give factors a second thought for probably 20+ years.
 
-Digging in, I was amazed to find out just how deep the rabbit hole goes - in fact, I haven't hit the bottom yet.
-Quote: Life is fractal
-And, a lot of this material is the result of that exploration, and in my humble opinion, the staggering beauty therein.
+However, the more I slowly grew to appreciate numbers, the more I slowly grew to realize just how important and fundamental factors actually are.
+
+Such is their importance, that it's actually suprising in a way that there isn't any method currently known to *efficiently* find all the factors of any given number.
+(Note:  This doesn't mean that there aren't several ingenious algorithms - there certainly are, and hopefully I'll cover several of them here) 
+
+However, even if there's things we still don't understand - in some ways that's a good thing, as it means that with just a little bit of exploration, it's
+entirely possible to turn up new, suprising, and unexpectedly delightful things.
+
