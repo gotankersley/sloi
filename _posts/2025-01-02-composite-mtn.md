@@ -14,7 +14,7 @@ In which we are introduced to some of the actors and terminology in our little d
 This will also help establish a "base-camp" conceptually that we can use to jump off into various excursions of the local scenery.
 
 So, let's get our bearings:  First, since we know that we are looking for some rectangle, any rectangle of factorix sized area, let's 
-
+<!--more-->
 Theory:  Finding factors is equivalent to finding lattice intersections with a factorix sized hyperbolic curve.
 
 - Armed with this insight, we set out to try to understand it better to see if it can be exploited - towards this end
