@@ -46,3 +46,4 @@ and not all the way to x/2.
 So, this isn't really groundbreaking, or anything new, but it just confirms what we already know about factors, but it does tie the geometrically to 
 certain location in Composite Mountain.
 
+<iframe src="/lib/gfx2?/sloi/widgets/fact/test" width="300" height="300"></iframe>
