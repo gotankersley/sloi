@@ -37,18 +37,23 @@ In this interactive visualization of Composite Mtn, the height somewhat poetical
 
 However, it does help illustrate several important concepts:
 - Symmetry along the diagonal
-- Also, if we consider each line, we notice that we have 2x, 3x, 4x ... x^2
+- If we consider each line, we notice that we have 2x, 3x, 4x ... x^2
 - On the Factorix plane, there is a hyperbola formed which is the "Line of Potentiality" LOP.
 - Try a prime Factorix, e.g. 11, and see how it's height exactly equals any of the mountain blocks, because it is prime
 
 As another example, it's instructive to look at the highly composite number 60, and it's LOP coordinates:  2x30, 3x20, 4x15, 5x12, 6x10, 7x8, which are all the factors of 60.
 
-<img src="/sloi/img/fact/composite/desmos-plot.png" style="width:50%"/>
+
+- Conclusion 1: The LOP curve is the only place on Composite mountain that can possibly be a factor for the Factorix.
+- Conclusion 2:  Finding factors is equivalent to finding lattice intersections with a "Factorix sized" hyperbolic curve.
+
+We can check these conclusions by plotting in Desmos as well: (e.g. Factorix of 12)
+
+<img src="/sloi/img/fact/composite/desmos-plot.png" style="width:75%"/>
+
+And we see that these conclusions check out.
 
 So, this isn't really groundbreaking, or anything new, but it can be helpful to give us a geometric intuition about factors, and gives a bit of a "base-camp" conceptually that we can use to jump off into various excursions of the local scenery.
-
-Conclusion:  Finding factors is equivalent to finding lattice intersections with a "Factorix sized" hyperbolic curve.
-
 
 	
 So, it true that the LOP is equivalent to the algorithm for dividing the factorix x to find factors, (but from the composite mountain point of view)
@@ -56,5 +61,4 @@ Also, it explains with the diagonal line of symmetry, occuring at the sqrt(x), w
 and not all the way to x/2.
 
 
-- Theory 1 (LOP): The LOP is the only place on Composite mountain that can possibly be a factor for the factorix.
 
