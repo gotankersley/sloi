@@ -20,7 +20,7 @@ for x in range(0, factorix):
         
 {% endhighlight %}
 
-<iframe src="/lib/gfx3?/sloi/widgets/fact/mtn/mtn" width="500" height="500"></iframe>
+<iframe src="/lib/gfx3?/../sloi/widgets/fact/mtn/mtn" width="500" height="500"></iframe>
 
 In the visualization, dubbed Composite mountain, the height somewhat poetically reminds me of a shore-line, with the water line hitting at some height...
 
