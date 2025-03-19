@@ -3,7 +3,7 @@ layout: post
 title:  "Composite Mtn"
 date:   2025-01-02 11:39:55 -0600
 tags: fact composite
-#thumb: 
+thumb: /sloi/img/fact/composite/composite.jpg
 no-border: true
 caption: Composite Mtn
 project-link: /composite-mtn
@@ -20,7 +20,7 @@ for x in range(0, factorix):
         
 {% endhighlight %}
 
-<iframe src="/lib/gfx3?/../sloi/widgets/fact/mtn/mtn" width="500" height="500"></iframe>
+<iframe src="/lib/gfx3?/../sloi/widgets/fact/composite/composite" width="500" height="500"></iframe>
 
 In the visualization, dubbed Composite mountain, the height somewhat poetically reminds me of a shore-line, with the water line hitting at some height...
 
