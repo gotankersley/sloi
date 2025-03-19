@@ -8,9 +8,7 @@ no-border: true
 caption: Composite Mtn
 project-link: /composite-mtn
 ---
-<h3>Establishing a "base-camp" conceptually that we can use to jump off into various excursions of the local scenery.</h3>
-
-Let's get our bearings:  First, <!--more-->since we know that we are looking for any two numbers that when multiplied together equal the Factorix, we are going to graph it. *Always graph your data*
+Establishing a "base-camp" conceptually that we can use to jump off into various excursions of the local scenery, let's get our bearings:  First, <!--more-->since we know that we are looking for any two numbers that when multiplied together equal the Factorix, we are going to graph it. *Always graph your data*
 
 Specifically, we're just going to do a simple 2d loop, and show the products as the height:
 
