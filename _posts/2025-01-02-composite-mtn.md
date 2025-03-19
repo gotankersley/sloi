@@ -8,6 +8,8 @@ no-border: true
 caption: Composite Mtn
 project-link: /composite-mtn
 ---
+Let's take a trip to Composite Mtn!  "Right, uhm, now where exactly is that?", you ask. 
+
 Let's get our bearings by establishing a "base-camp" conceptually that we can use to jump off into various excursions of the local scenery.
 
 First, <!--more-->since we know that we are looking for any two numbers that when multiplied together equal the Factorix, we are going to graph it. *Always graph your data*
