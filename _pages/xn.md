@@ -4,6 +4,7 @@ title: Compression
 permalink: /xn
 order: 0
 category: xn
+nav: show
 ---
 <h2>About</h2>
 <p>Isn't compression a solved problem?</p>

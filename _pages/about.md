@@ -3,6 +3,7 @@ layout: page
 title: About
 permalink: /about
 order: 3
+nav: show
 ---
 
 # About
