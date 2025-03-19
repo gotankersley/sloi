@@ -20,15 +20,14 @@ for x in range(0, factorix):
         
 {% endhighlight %}
 
-<iframe src="/lib/gfx3?sloi/widgets/fact/mtn/mtn" width="500"></iframe>
+<iframe src="/lib/gfx3?/sloi/widgets/fact/mtn/mtn" width="500" height="500"></iframe>
 
-In the visualization, dubbed Composite mountain, the height represents the product of X*Y, 
-somewhat poetically, reminding me of a shore-line, with the water line hitting at some height.
+In the visualization, dubbed Composite mountain, the height somewhat poetically reminds me of a shore-line, with the water line hitting at some height...
 
-Note:
-- See how it starts small (2x2 in the corner), and gets large in the opposite corner (8x8)
+However, it helps illustrate several important concepts:
 - Symmetry along the diagonal
 - Also, if we consider each line, we notice that we have 2x, 3x, 4x ... x^2
+- See how it starts small (2x2 in the corner), and gets large in the opposite corner (8x8)
 - See the factorix plane, and once again, for example, see 11, and how it's height hovers in between all the other ones
 - Looking closer, we see that for a given factorix, there is a hyperbola visible which is the "Line of Potentiality" LOP.
 
