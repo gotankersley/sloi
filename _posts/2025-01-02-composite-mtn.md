@@ -38,11 +38,11 @@ In this interactive visualization of Composite Mtn, the height somewhat poetical
 However, it does help illustrate two important concepts:
 1. Symmetry along the diagonal - Which means searching for factors only has to be done up to the sqrt(Factorix), because it's symmetrical.
 
-2. On Composite Mtn, the only place that can possibly be a factor for the Factorix is on hyperbolic curve, dubbed "Line of Potentiality" LOP, where the Factorix plane mets the mountain.
+2. On Composite Mtn, the *only* place that can possibly be a factor for the Factorix is on hyperbolic curve, dubbed "Line of Potentiality" LOP, where the Factorix plane mets the mountain.
 
 For example, it's instructive to look at the highly composite number 60, and it's LOP coordinates:  2x30, 3x20, 4x15, 5x12, 6x10, 7x8, which are all the factors of 60.
 
-As another example, look at a prime Factorix, e.g. 11, and see how it's height exactly equals any of the mountain blocks - and thus it is prime.
+As another example, look at a prime Factorix, e.g. 11, and see how it's height exactly equals any of the mountain blocks, except at 1x11, and 11x1 - and thus it is prime.
 
 Conclusion:  Finding factors is equivalent to finding lattice intersections with a "Factorix sized" hyperbolic curve.
 
