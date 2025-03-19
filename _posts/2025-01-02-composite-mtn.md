@@ -8,14 +8,16 @@ no-border: true
 caption: Composite Mtn
 project-link: /composite-mtn
 ---
-Let's take a trip to Composite Mtn!  "Right, uhm, now where exactly is that?", you ask. 
+Let's take a trip to Composite Mtn!  "Right, uhm, now where exactly is that?", you ask. <!--more-->
+
+Composite
 
 Let's get our bearings by establishing a "base-camp" conceptually that we can use to jump off into various excursions of the local scenery.
 
-First, <!--more-->since we know that we are looking for any two numbers that when multiplied together equal the Factorix, we are going to graph it. *Always graph your data*
+First, since we know that we are looking for any two numbers that when multiplied together equal the Factorix, we are going to graph it. *Always graph your data*
 
 
-<table border="1"><thead><tr><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th></tr></thead><tbody><tr><td>1</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr><tr><td>2</td><td>2</td><td>4</td><td>5</td><td>6</td><td>10</td><td>12</td><td>14</td></tr><tr><td>3</td><td>3</td><td>6</td><td>9</td><td>12</td><td>15</td><td>18</td><td>21</td></tr><tr><td>4</td><td>4</td><td>8</td><td>12</td><td>16</td><td>20</td><td>24</td><td>28</td></tr><tr><td>5</td><td>5</td><td>10</td><td>15</td><td>20</td><td>25</td><td>30</td><td>35</td></tr><tr><td>6</td><td>6</td><td>12</td><td>18</td><td>24</td><td>30</td><td>36</td><td>42</td></tr><tr><td>7</td><td>7</td><td>14</td><td>21</td><td>28</td><td>35</td><td>42</td><td>49</td></tr></tbody></table>
+<table border="1" style="border-collapse: collapse; margin: 25px 0; font-size: 0.9em; font-family: sans-serif; min-width: 400px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);"><thead><tr><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th></tr></thead><tbody><tr><td>1</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr><tr><td>2</td><td>2</td><td>4</td><td>5</td><td>6</td><td>10</td><td>12</td><td>14</td></tr><tr><td>3</td><td>3</td><td>6</td><td>9</td><td>12</td><td>15</td><td>18</td><td>21</td></tr><tr><td>4</td><td>4</td><td>8</td><td>12</td><td>16</td><td>20</td><td>24</td><td>28</td></tr><tr><td>5</td><td>5</td><td>10</td><td>15</td><td>20</td><td>25</td><td>30</td><td>35</td></tr><tr><td>6</td><td>6</td><td>12</td><td>18</td><td>24</td><td>30</td><td>36</td><td>42</td></tr><tr><td>7</td><td>7</td><td>14</td><td>21</td><td>28</td><td>35</td><td>42</td><td>49</td></tr></tbody></table>
 
 Specifically, we're just going to do a simple 2d loop, and show the products as the height:
 
