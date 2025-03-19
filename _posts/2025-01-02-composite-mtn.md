@@ -8,7 +8,12 @@ no-border: true
 caption: Composite Mtn
 project-link: /composite-mtn
 ---
-Establishing a "base-camp" conceptually that we can use to jump off into various excursions of the local scenery, let's get our bearings:  First, <!--more-->since we know that we are looking for any two numbers that when multiplied together equal the Factorix, we are going to graph it. *Always graph your data*
+Let's get our bearings by establishing a "base-camp" conceptually that we can use to jump off into various excursions of the local scenery.
+
+First, <!--more-->since we know that we are looking for any two numbers that when multiplied together equal the Factorix, we are going to graph it. *Always graph your data*
+
+
+<table><thead><tr><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th></tr></thead><tbody><tr><td>1</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr><tr><td>2</td><td>2</td><td>4</td><td>5</td><td>6</td><td>10</td><td>12</td><td>14</td></tr><tr><td>3</td><td>3</td><td>6</td><td>9</td><td>12</td><td>15</td><td>18</td><td>21</td></tr><tr><td>4</td><td>4</td><td>8</td><td>12</td><td>16</td><td>20</td><td>24</td><td>28</td></tr><tr><td>5</td><td>5</td><td>10</td><td>15</td><td>20</td><td>25</td><td>30</td><td>35</td></tr><tr><td>6</td><td>6</td><td>12</td><td>18</td><td>24</td><td>30</td><td>36</td><td>42</td></tr><tr><td>7</td><td>7</td><td>14</td><td>21</td><td>28</td><td>35</td><td>42</td><td>49</td></tr></tbody></table>
 
 Specifically, we're just going to do a simple 2d loop, and show the products as the height:
 
@@ -20,7 +25,7 @@ for x in range(0, factorix):
         
 {% endhighlight %}
 
-<iframe src="/lib/gfx3?/../../sloi/widgets/fact/composite/composite" width="500" height="500"></iframe>
+<iframe src="/lib/gfx3?/../../sloi/widgets/fact/composite/composite" width="1000" height="800"></iframe>
 
 In the visualization, dubbed Composite mountain, the height somewhat poetically reminds me of a shore-line, with the water line hitting at some height...
 
