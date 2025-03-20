@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "CAmpression"
-date:   2025-03-16 11:39:55 -0600
+date:   2024-01-11 11:39:55 -0600
 tags: xn ca
 #thumb: 
 no-border: true
