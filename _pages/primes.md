@@ -6,5 +6,3 @@ order: 2
 category: primes
 nav: show
 ---
-
-Here are some examples of primes: 1,2,3,13,51,57...
