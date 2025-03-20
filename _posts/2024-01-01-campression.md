@@ -14,7 +14,7 @@ project-link: /xn-campression
 
 The basic idea is that...
 
-## Rules for CAmpression:
+## Rules for CAmpression:<!--more-->
 1. The balls must continually bounce
 2. The balls ghost each other, (and collisions will be handled at the end)
 3. The balls move 2x the speed of the walls
