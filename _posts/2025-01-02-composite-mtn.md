@@ -21,7 +21,6 @@ And, coincidentally, this humble table shows the result of multiplying two numbe
 
 However, it's difficult to tell just from the table what is actually happening, so, we are going to graph it. *Always graph your data*
 
-<img src="/sloi/img/fact/composite/plot.png"/>
 
 Specifically, we're just going to do a simple 2d loop, and show the products as the height:
 
@@ -32,6 +31,7 @@ for x in range(0, factorix):
         # plot height
         
 {% endhighlight %}
+<img src="/sloi/img/fact/composite/plot.png"/>
 
 <iframe src="/lib/gfx3?/../../sloi/widgets/fact/composite/composite" width="800" height="800"></iframe>
 
