@@ -19,7 +19,7 @@ Now, we know that when we are looking for factors, we are looking for any two nu
 
 And, coincidentally, this humble table shows the result of multiplying two numbers together.
 
-However, it's difficult to tell just from the table what is actually happening, so, we are going to graph it. *Always graph your data*
+However, it's difficult to tell just from the table what is actually happening, so, we are going to graph it. *(Always graph your data)*
 
 
 Specifically, we're just going to do a simple 2d loop, and show the products as the height:
