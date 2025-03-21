@@ -6,12 +6,11 @@ const HEIGHT = 600;
 
 
 
-window.$n = Slider('n', 0, 10000, 27, 1);
+window.$n = Slider('n', 0, 10000, 60, 1);
 window.$scaleX = Slider('scaleX', 0, 100, 20, 0.01);
 window.$scaleY = Slider('scaleY', 0, 100, 20, 0.01);
 
 
-const PAT = '010000100000000100001000';
 
 window.Render = function() {
 	
