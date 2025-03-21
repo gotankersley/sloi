@@ -6,7 +6,7 @@ tags: fact composite
 thumb: /sloi/img/fact/composite/composite.jpg
 no-border: true
 caption: Composite Mtn
-project-link: /composite-mtn
+#project-link: /composite-mtn
 ---
 Let's take a trip to Composite Mtn!  
 

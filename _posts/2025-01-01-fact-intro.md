@@ -6,7 +6,7 @@ tags: fact intro
 thumb: /img/tork5/board-rendered.jpg
 no-border: true
 caption: Introduction
-project-link: /fact-intro
+#project-link: /fact-intro
 ---
 I have some vague memory of learning about factors in gradeschool ... and not being particularly impressed.  But, other than that fleeting encounter, I wasn't to give factors a second thought for probably 20+ years.
 <!--more-->
