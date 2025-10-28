@@ -44,7 +44,7 @@ However, it does help illustrate two important concepts:
 
 For example, it's instructive to look at the highly composite number 60, and it's LOP coordinates:  2x30, 3x20, 4x15, 5x12, 6x10, 7x8, which are all the factors of 60.
 
-As another example, look at a prime Factorix, e.g. 11, and see how it's height exactly equals any of the mountain blocks, except at 1x11, and 11x1 - and thus it is prime.
+As another example, look at a prime Factorix, e.g. 11, and see how it's height doesn't exactly equal any of the mountain blocks, except at 1x11, and 11x1 - and thus it is prime.
 
 Conclusion:  Finding factors is equivalent to finding lattice intersections with a "Factorix sized" hyperbolic curve.
 
@@ -52,10 +52,13 @@ We can check this conclusion by plotting in Desmos as well: (e.g. Factorix of 12
 
 <img src="/sloi/img/fact/composite/desmos-plot.png" style="width:75%"/>
 
-And we see that this checks out.
+And we see that this checks out.  
 
-So, this isn't really groundbreaking, or anything new.  But, it can be helpful to give us a geometric intuition about products & factors, and also gives a bit of a "base-camp" conceptually that we can use to jump off into various excursions of the local scenery.
+(And, actually, the fact that hyperbolic curves are intimately related to factors is well known, and will eventually be the subject of it's very own Conics post someday) .
 
+However, all this isn't really groundbreaking, or anything new.  But, it can be helpful to give us a geometric intuition about products & factors, and also gives a bit of a "base-camp" conceptually that we can use to jump off into various excursions of the local scenery.
+
+Continued in Part II - <a href="/sloi/2025/01/04/composite-mtn2">Traversing Composite Mtn</a>
 
 
 
