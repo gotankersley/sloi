@@ -19,6 +19,7 @@ Despite being the new kid on the compression block, Set-Shaping-Theory has some 
 
 Unfortunately, though, Set-Shaping-Theory being a theory, this means that it leaves the actual specification of the bijective function as "an exercise for the reader" ... which is what the rest of this post is about.
 
+
 ## What? 
 For small messages, we can just use a table to store all possible sorted messages in a table, and look them up that way.
 However, the problem is that for large messages we can't just sort them all first and look them up - there's way too many of them.  But, what we can do is use a neat idea from combinatorics where we rank all possible sequences in order from those with the least amount of entropy to those with the greatest, and find our transformed sequence that way, without having to calculate all the intermediate sequences.
@@ -33,6 +34,7 @@ But, while that's easy enough to say, I did find out that actually implementing 
 For more specifics on the order, see the spreadsheets in the <a href="https://github.com/gotankersley/entropic-transform/tree/main/data" target="_blank">data folder</a>, especially the Entropy column, where you can see, for example, that CCDD (entropy 4.0) is ranked before BABB (entropy 3.25), but that each sequence that has only two distinct symbols is going to have less entropy than all the sequences with three distinct symbols, etc..
 
 Finally, there are lots of sequences that have identical entropy, so for Set Shaping Theory bijection purposes, once a sequence is ranked in (near) entropic order, it doesn't really matter what order the sequences come in, so I've just chosen an order that uniquely identifies them.
+
 
 
 ## How - (Advanced Counting)
@@ -52,10 +54,12 @@ First of all, the code in the implementation itself is, of course, proof-of-conc
 For further algorithmic optimization, the bottleneck here is probably calculating the Stirling numbers and the associated feasibility of generating large ones.  However, there are asymptotic approximations for large Stirling numbers, and some initial testing seems to indicate that it could potentially scale more, but this remains to be done.
 
 
-## Example:
-See this <a href="https://gotankersley.github.io/entropic-transforms">online tool</a> which shows a comparison of some Entropic Transforms in action.
 
-<br/>
+## Example:
+See this <a href="https://gotankersley.github.io/entropic-transform">online tool</a> which shows a comparison of some Entropic Transforms in action.
+
+
+
 ---
 Note 1: The origins of Set-Shaping-Theory appear to go back to John Kendall Dixon
 
