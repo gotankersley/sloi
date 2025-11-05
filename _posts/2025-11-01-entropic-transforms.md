@@ -11,10 +11,9 @@ project-link: /entropic-transform
 
 # Entropic Transforms
 An entropic transform is method used in various types of compression in order to change the initial entropy of a message in the hopes that the transformed 
-message will be easier to compress, or have some other desirable properties.
+message will be easier to compress, or have some other desirable properties.<!--more-->
 
-The Burrows-Wheeler Transform is one such fascinating example, (and is used in the BZIP format!)  However, a newer, and lesser known example,
-<!--more-->, is "Set-Shaping-Theory", which uses some "Bijective Function" to accomplish the entropic transform.  (See <a href="https://sochima.me/set-shaping-theory">this page</a> for a helpful introduction)
+The Burrows-Wheeler Transform is one such fascinating example, (and is used in the BZIP format!)  However, a newer, and lesser known example, is "Set-Shaping-Theory", which uses some "Bijective Function" to accomplish the entropic transform.  (See <a href="https://sochima.me/set-shaping-theory">this page</a> for a helpful introduction)
 
 Despite being the new kid on the block, Set-Shaping-Theory has some pretty big potential for pushing the existing boundaries of compression with regards to random data.
 
