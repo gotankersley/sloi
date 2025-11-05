@@ -56,7 +56,7 @@ For further algorithmic optimization, the bottleneck here is probably calculatin
 
 
 ## Example:
-See this <a href="https://gotankersley.github.io/entropic-transform">online tool</a> which shows a comparison of some Entropic Transforms in action.
+See this <a href="https://gotankersley.github.io/entropic-transform" target="_blank">online tool</a> which shows a comparison of some Entropic Transforms in action.<br/>
 
 
 
