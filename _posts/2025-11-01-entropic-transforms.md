@@ -13,11 +13,11 @@ project-link: /entropic-transform
 An entropic transform is method used in various types of compression in order to change the initial entropy of a message in the hopes that the transformed 
 message will be easier to compress, or have some other desirable properties.<!--more-->
 
-The Burrows-Wheeler Transform is one such fascinating example, (and is used in the BZIP format!)  However, a newer, and lesser known example, is "Set-Shaping-Theory", which uses some "Bijective Function" to accomplish the entropic transform.  (See <a href="https://sochima.me/set-shaping-theory">this page</a> for a helpful introduction)
+The Burrows-Wheeler Transform is one such fascinating example, (and is used in the BZIP format!)  However, a newer, and lesser known example, is "Set-Shaping-Theory", which uses some "Bijective Function" to accomplish the entropic transform.  (See <a target="_blank" href="https://sochima.me/set-shaping-theory">this page</a> for a helpful introduction)
 
-Despite being the new kid on the block, Set-Shaping-Theory has some pretty big potential for pushing the existing boundaries of compression with regards to random data.
+Despite being the new kid on the compression block, Set-Shaping-Theory has some pretty big potential for pushing the existing boundaries of compression with regards to what it can do with random data.
 
-Although, unfortunately, Set-Shaping-Theory being a theory, it means that it leaves the actual specification of the bijective function as "an exercise for the reader", which is what the rest of this post is about.
+Unfortunately, though, Set-Shaping-Theory being a theory, this means that it leaves the actual specification of the bijective function as "an exercise for the reader" ... which is what the rest of this post is about.
 
 ## What? 
 For small messages, we can just use a table to store all possible sorted messages in a table, and look them up that way.
@@ -26,11 +26,11 @@ However, the problem is that for large messages we can't just sort them all firs
 But, while that's easy enough to say, I did find out that actually implementing this was rather tricky, (at least for me).  So much so, that I ended up making three separate attempts at it.
 1. With the the first approach, I found a way that is technically correct, but unfortunately I ran into the obstacle that for anything beyond the smallest alphabets of symbols, it quickly became unusably slow due to the amount of integer partitions it had to process.
 
-2. With the second approach, I ended up implementing it a different way, that while good, does not have exact entropic order within a alphabet count section, but is quite a bit faster.  This second method is what I'm calling "near entropic" order.  
+2. With the second approach, I ended up implementing it a different way, that while good, does not have exact entropic order within a alphabet count section, but is quite a bit faster.  This second method is what I'm calling <b>"near entropic"</b> order.  
 
-3. For the final approach, I found a way to modify the previous method so that the ranking is fully entropic, and can handle "reasonably" large messages and alphabets. 
+3. For the final approach, I found a way to modify the previous method so that the ranking is fully entropic, and can handle larger messages and alphabets than the first method. 
 
-For more specifics on the order, see the spreadsheets in the data folder, especially the Entropy column, where you can see, for example, that CCDD (entropy 4.0) is ranked before BABB (entropy 3.25), but that each sequence that has only two distinct symbols is going to have less entropy than all the sequences with three distinct symbols, etc..
+For more specifics on the order, see the spreadsheets in the <a href="https://github.com/gotankersley/entropic-transform/tree/main/data" target="_blank">data folder</a>, especially the Entropy column, where you can see, for example, that CCDD (entropy 4.0) is ranked before BABB (entropy 3.25), but that each sequence that has only two distinct symbols is going to have less entropy than all the sequences with three distinct symbols, etc..
 
 Finally, there are lots of sequences that have identical entropy, so for Set Shaping Theory bijection purposes, once a sequence is ranked in (near) entropic order, it doesn't really matter what order the sequences come in, so I've just chosen an order that uniquely identifies them.
 
@@ -43,18 +43,19 @@ Given a message and a certain sized alphabet, we can consider it an (often large
 Now, once we have our message rank, this is where the bijection comes from, we can then equate it with the corresponding rank of all sequences sorted in entropic order, and UNRANK it to get that specific sequence.  In the example with 123, to do the entropic transform, we would find the 123rd sequence of all the sequences that are arranged in entropic order and that had an equal sized alphabet.  And, that's pretty much all there is to it.
 
 ## Code:
-Code implementing this algorithm has been made available at the following GitHub repo: https://github.com/gotankersley/entropic-transform
+Code implementing this algorithm has been made available at the following GitHub repo: <a href="https://github.com/gotankersley/entropic-transform" target="_blank">https://github.com/gotankersley/entropic-transform</a>
 
 <b>Disclaimer:</b>
 First of all, the code in the implementation itself is, of course, proof-of-concept code, and is not at all optimized, (i.e. written in Python), but could easily be converted to a native solution, (i.e. written in C/C++), which probably would result in a modest 10x speedup.  
 (Which, to be fair, depending on intended usage, may be an irrelevant speed increase).
 
-For further algorithmic optimization, the bottleneck hereis probably calculating the Stirling numbers and the associated feasibility of generating large ones.  However, there are asymptotic approximations for large Stirling numbers, and some initial testing seems to indicate that it could potentially scale more, but this remains to be done.
+For further algorithmic optimization, the bottleneck here is probably calculating the Stirling numbers and the associated feasibility of generating large ones.  However, there are asymptotic approximations for large Stirling numbers, and some initial testing seems to indicate that it could potentially scale more, but this remains to be done.
 
 
 ## Example:
 See this <a href="https://gotankersley.github.io/entropic-transforms">online tool</a> which shows a comparison of some Entropic Transforms in action.
 
+<br/>
 ---
 Note 1: The origins of Set-Shaping-Theory appear to go back to John Kendall Dixon
 
