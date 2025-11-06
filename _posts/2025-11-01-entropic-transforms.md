@@ -18,7 +18,9 @@ The Burrows-Wheeler Transform is one such fascinating example, (and is used in t
 Despite being the new kid on the compression block, Set-Shaping-Theory has some pretty big potential for pushing the existing boundaries of compression with regards to what it can do with random data.
 
 Unfortunately, though, Set-Shaping-Theory being a theory, this means that it leaves the actual specification of the bijective function as "an exercise for the reader" ... which is what the rest of this post is about.
-
+<br>
+<br>
+<br>
 
 ## What? 
 For small messages, we can just use a table to store all possible sorted messages in a table, and look them up that way.
@@ -34,7 +36,9 @@ But, while that's easy enough to say, I did find out that actually implementing 
 For more specifics on the order, see the spreadsheets in the <a href="https://github.com/gotankersley/entropic-transform/tree/main/data" target="_blank">data folder</a>, especially the Entropy column, where you can see, for example, that CCDD (entropy 4.0) is ranked before BABB (entropy 3.25), but that each sequence that has only two distinct symbols is going to have less entropy than all the sequences with three distinct symbols, etc..
 
 Finally, there are lots of sequences that have identical entropy, so for Set Shaping Theory bijection purposes, once a sequence is ranked in (near) entropic order, it doesn't really matter what order the sequences come in, so I've just chosen an order that uniquely identifies them.
-
+<br>
+<br>
+<br>
 
 
 ## How - (Advanced Counting)
@@ -43,7 +47,9 @@ The following an overview of how it works that is stated in a way to try to put 
 Given a message and a certain sized alphabet, we can consider it an (often large) number in a base the size of the alphabet.  We are, of course, accustomed to doing this all the time with the digits in the base-10 place value system.  (In fact, we consider the place-value representation so synonymous, we think of it as the number itself).  However, in combinatorial language, this base conversion is equivalent to ranking or counting, like in all the possible ways to arrange the symbols of the alphabet, that given message is the 10 gazillionth, or whatever way to arrange it.  For example, the number 123 in base-10 is obviously the 123rd way to arrange an alphabet of 10 symbols.  
 
 Now, once we have our message rank, this is where the bijection comes from, we can then equate it with the corresponding rank of all sequences sorted in entropic order, and UNRANK it to get that specific sequence.  In the example with 123, to do the entropic transform, we would find the 123rd sequence of all the sequences that are arranged in entropic order and that had an equal sized alphabet.  And, that's pretty much all there is to it.
-
+<br>
+<br>
+<br>
 ## Code:
 Code implementing this algorithm has been made available at the following GitHub repo: <a href="https://github.com/gotankersley/entropic-transform" target="_blank">https://github.com/gotankersley/entropic-transform</a>
 
@@ -52,17 +58,23 @@ First of all, the code in the implementation itself is, of course, proof-of-conc
 (Which, to be fair, depending on intended usage, may be an irrelevant speed increase).
 
 For further algorithmic optimization, the bottleneck here is probably calculating the Stirling numbers and the associated feasibility of generating large ones.  However, there are asymptotic approximations for large Stirling numbers, and some initial testing seems to indicate that it could potentially scale more, but this remains to be done.
-
+<br>
+<br>
+<br>
 
 
 ## Example:
-See this <a href="https://gotankersley.github.io/entropic-transform" target="_blank">online tool</a> which shows a comparison of some Entropic Transforms in action.<br/>
-
+See this <a href="https://gotankersley.github.io/entropic-transform" target="_blank">online tool</a> which shows a comparison of some Entropic Transforms in action.
+<br>
+<br>
+<br>
 
 
 ---
 Note 1: The origins of Set-Shaping-Theory appear to go back to John Kendall Dixon
 
-Note 2:  While looking for existing algorithms, I found some example MatLab code which has the opaque fSSTt.p compiled MatLab functions, but has no explanation of how it worked aside from this comment by one of the co-authors Christian Schmidt that claimed "such a transformation is essentially a topology problem".  So, I don't know what they were doing, but the way I implemented this is a combinatorial solution instead.
+Note 2: While looking for existing algorithms, I found some example MatLab code which has the opaque fSSTt.p compiled MatLab functions, but has no explanation of how it worked aside from this comment by one of the co-authors Christian Schmidt that claimed "such a transformation is essentially a topology problem".  So, I don't know what they were doing, but the way I implemented this is a combinatorial solution instead.
 
 Note 3: For measuring Entropy, I'm using the function defined by Sochima Biereagu
+
+Note 4: For the BWT Transform, we are actually using the bijective BWTS variant for comparison
