@@ -13,7 +13,7 @@ project-link: /entropic-transform
 An entropic transform is method used in various types of compression in order to change the initial entropy of a message in the hopes that the transformed 
 message will be easier to compress, or have some other desirable properties.<!--more-->
 
-The Burrows-Wheeler Transform is one such fascinating example, (and is used in the BZIP format!)  However, a newer, and lesser known example, is "Set-Shaping-Theory", which uses some "Bijective Function" to accomplish the entropic transform.  (See <a target="_blank" href="https://sochima.me/set-shaping-theory">this page</a> for a helpful introduction)
+The Burrows-Wheeler Transform is one such fascinating example, (and is used in the BZIP format!)  However, a newer, and lesser known example, is "Set-Shaping-Theory", which uses some "Bijective Function" to accomplish the entropic transform.  (See <a target="_blank" href="https://sochima.me/set-shaping-theory">this page</a>, and <a href="https://levelup.gitconnected.com/shannon-theory-vs-set-shaping-theory-14dfb966666c" target="_blank">this page</a> for a helpful introduction)
 
 Despite being the new kid on the compression block, Set-Shaping-Theory has some pretty big potential for pushing the existing boundaries of compression with regards to what it can do with random data.
 
@@ -44,7 +44,7 @@ Finally, there are lots of sequences that have identical entropy, so for Set Sha
 ## How - (Advanced Counting)
 The following an overview of how it works that is stated in a way to try to put it into the combinatorial language of ranking and unranking.  
 
-Given a message and a certain sized alphabet, we can consider it an (often large) number in a base the size of the alphabet.  We are, of course, accustomed to doing this all the time with the digits in the base-10 place value system.  (In fact, we consider the place-value representation so synonymous, we think of it as the number itself).  However, in combinatorial language, this base conversion is equivalent to ranking or counting, like in all the possible ways to arrange the symbols of the alphabet, that given message is the 10 gazillionth, or whatever way to arrange it.  For example, the number 123 in base-10 is obviously the 123rd way to arrange an alphabet of 10 symbols.  
+Given a message and a certain sized alphabet, we can consider it an (often large) number in a base the size of the alphabet.  We are, of course, accustomed to doing this all the time with the digits in the base-10 place value system.  (In fact, we consider the place-value representation so synonymous, we think of it as the number itself).  However, in combinatorial language, this base conversion is equivalent to ranking or counting - think of it like in ALL the possible ways to arrange the symbols of the alphabet, that given message is the 10 gazillionth, or whatever way to arrange it.  For example, the number 123 in base-10 is obviously the 123rd way to arrange an alphabet of 10 symbols.  
 
 Now, once we have our message rank, this is where the bijection comes from, we can then equate it with the corresponding rank of all sequences sorted in entropic order, and UNRANK it to get that specific sequence.  In the example with 123, to do the entropic transform, we would find the 123rd sequence of all the sequences that are arranged in entropic order and that had an equal sized alphabet.  And, that's pretty much all there is to it.
 <br>
