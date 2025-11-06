@@ -77,4 +77,4 @@ Note 2: While looking for existing algorithms, I found some example MatLab code 
 
 Note 3: For measuring Entropy, I'm using the function defined by Sochima Biereagu
 
-Note 4: For the BWT Transform, we are actually using the bijective BWTS variant for comparison
+Note 4: For the BWT Transform, I'm using the bijective BWTS variant for comparison
