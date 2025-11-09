@@ -26,14 +26,28 @@ Unfortunately, though, Set-Shaping-Theory being a theory, this means that it lea
 For small messages, we can just use a table to store all possible sorted messages in a table, and look them up that way.
 However, the problem is that for large messages we can't just sort them all first and look them up - there's way too many of them.  But, what we can do is use a neat idea from combinatorics where we rank all possible sequences in order from those with the least amount of entropy to those with the greatest, and find our transformed sequence that way, without having to calculate all the intermediate sequences.
 
-But, while that's easy enough to say, I did find out that actually implementing this was rather tricky, (at least for me).  So much so, that I ended up making three separate attempts at it.
-1. With the the first approach, I found a way that is technically correct, but unfortunately I ran into the obstacle that for anything beyond the smallest alphabets of symbols, it quickly became unusably slow due to the amount of integer partitions it had to process.
+But, while that's easy enough to say, actually implementing this is quite tricky, and while the following describes a method for ordering that is near entropic, note that it is only an approximation, and diverges from the real entropic order.
 
-2. With the second approach, I ended up implementing it a different way, that while good, does not have exact entropic order within a alphabet count section, but is quite a bit faster.  This second method is what I'm calling <b>"near entropic"</b> order.  
+The ordering of this approximation algorithm can be explicitly stated based on the repetitions of distinct characters, sorted by reverse integer-partition order.
 
-3. For the final approach, I found a way to modify the previous method so that the ranking is fully entropic, and can handle larger messages and alphabets than the first method. 
+For example, here are some sequences and the repeat patterns they have:
+CABAC - two 'C', two 'A's, one 'B'           =  repeat pattern [2,2,1]
+EBDAA - one 'E', one 'B', one 'D', two 'A's  =  repeat pattern [2,1,1,1]
+AEDBB - one 'A', one 'E', one 'D', two 'B's  = repeat pattern  [2,1,1,1]
 
-For more specifics on the order, see the spreadsheets in the <a href="https://github.com/gotankersley/entropic-transform/tree/main/data" target="_blank">data folder</a>, especially the Entropy column, where you can see, for example, that CCDD (entropy 4.0) is ranked before BABB (entropy 3.25), but that each sequence that has only two distinct symbols is going to have less entropy than all the sequences with three distinct symbols, etc..
+These repeat patterns must sum up to the total sequence length, (which in this case is 5).  Thus, the total possible repeat patterns that are available must be the integer-partitions of 5, which are as follows:
+5
+4+1
+3+2
+3+1+1
+2+2+1
+2+1+1+1
+1+1+1+1+1
+
+This is the order that the algorithm will use for all sequences.  This means that all sequences with a repeat pattern of [5], (e.g. BBBBB) will come before all sequences with a repeat pattern of [4,1], (e.g. ABBBB, BBBBA, CCACC, etc...)
+
+
+For more specifics on the order, see <a href="https://www.desmos.com/calculator/8iv9axg8zu" target="_blank">this Desmos graph</a> and the spreadsheets in the <a href="https://github.com/gotankersley/entropic-transform/tree/main/data" target="_blank">data folder</a>, especially the Entropy column, where you can see, for example, that CCDD (entropy 4.0) is ranked before BABB (entropy 3.25), but that each sequence that has only two distinct symbols is going to have less entropy than all the sequences with three distinct symbols, etc..
 
 Finally, there are lots of sequences that have identical entropy, so for Set Shaping Theory bijection purposes, once a sequence is ranked in (near) entropic order, it doesn't really matter what order the sequences come in, so I've just chosen an order that uniquely identifies them.
 <br>
