@@ -31,11 +31,13 @@ But, while that's easy enough to say, actually implementing this is quite tricky
 The ordering of this approximation algorithm can be explicitly stated based on the repetitions of distinct characters, sorted by reverse integer-partition order.
 
 For example, here are some sequences and the repeat patterns they have:
+<pre>
 CABAC - two 'C', two 'A's, one 'B'           =  repeat pattern [2,2,1]
 EBDAA - one 'E', one 'B', one 'D', two 'A's  =  repeat pattern [2,1,1,1]
 AEDBB - one 'A', one 'E', one 'D', two 'B's  = repeat pattern  [2,1,1,1]
-
+</pre>
 These repeat patterns must sum up to the total sequence length, (which in this case is 5).  Thus, the total possible repeat patterns that are available must be the integer-partitions of 5, which are as follows:
+<pre>
 5
 4+1
 3+2
@@ -43,7 +45,7 @@ These repeat patterns must sum up to the total sequence length, (which in this c
 2+2+1
 2+1+1+1
 1+1+1+1+1
-
+</pre>
 This is the order that the algorithm will use for all sequences.  This means that all sequences with a repeat pattern of [5], (e.g. BBBBB) will come before all sequences with a repeat pattern of [4,1], (e.g. ABBBB, BBBBA, CCACC, etc...)
 
 
