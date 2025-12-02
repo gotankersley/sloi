@@ -67,16 +67,10 @@ Now, once we have our message rank, this is where the bijection comes from, we c
 <br>
 <br>
 ## Code:
-Code implementing this algorithm has been made available at the following GitHub repo: <a href="https://github.com/gotankersley/entropic-transform" target="_blank">https://github.com/gotankersley/entropic-transform</a>
+Code implementing this algorithm has been made available at the following GitHub repos: <br>
+<a href="https://github.com/gotankersley/entropic-transform" target="_blank">https://github.com/gotankersley/entropic-transform</a> (Python) <br>
+<a href="https://github.com/gotankersley/decimate" target="_blank">https://github.com/gotankersley/decimate</a> (C/C++) <br>
 
-<b>Disclaimer:</b>
-First of all, the code in the implementation itself is, of course, proof-of-concept code, and is not at all optimized, (i.e. written in Python), but could easily be converted to a native solution, (i.e. written in C/C++), which probably would result in a modest 10x speedup.  
-(Which, to be fair, depending on intended usage, may be an irrelevant speed increase).
-
-For further algorithmic optimization, the bottleneck here is probably calculating the Stirling numbers and the associated feasibility of generating large ones.  However, there are asymptotic approximations for large Stirling numbers, and some initial testing seems to indicate that it could potentially scale more, but this remains to be done.
-<br>
-<br>
-<br>
 
 
 ## Example:
