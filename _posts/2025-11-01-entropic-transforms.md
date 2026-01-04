@@ -15,7 +15,7 @@ message will be easier to compress, or have some other desirable properties.<!--
 
 The Burrows-Wheeler Transform is one such fascinating example, (and is used in the BZIP format!)  However, a newer, and lesser known example, is "Set-Shaping-Theory", which uses some "Bijective Function" to accomplish the entropic transform.  (See <a target="_blank" href="https://sochima.me/set-shaping-theory">this page</a>, and <a href="https://levelup.gitconnected.com/shannon-theory-vs-set-shaping-theory-14dfb966666c" target="_blank">this page</a> for a helpful introduction)
 
-Despite being the new kid on the compression block, Set-Shaping-Theory has some pretty big potential for pushing the existing boundaries of compression with regards to what it can do with random data.
+Set-Shaping-Theory is the new kid on the compression block, and may have some potential for pushing the existing boundaries of compression with regards to what it can do with random data.
 
 Unfortunately, though, Set-Shaping-Theory being a theory, this means that it leaves the actual specification of the bijective function as "an exercise for the reader" ... which is what the rest of this post is about.
 <br>
