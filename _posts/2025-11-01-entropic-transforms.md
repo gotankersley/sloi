@@ -74,7 +74,7 @@ Code implementing this algorithm has been made available at the following GitHub
 
 
 ## Example:
-See this <a href="https://gotankersley.github.io/entropic-transform" target="_blank">online tool</a> which shows a comparison of some Entropic Transforms in action.
+See this <a href="https://gotankersley.github.io/entropyzer" target="_blank">online tool</a> which shows a comparison of some Entropic Transforms in action.
 <br>
 <br>
 <br>
